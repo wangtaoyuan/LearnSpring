@@ -6,6 +6,15 @@
              xsi:schemaLocation="http://www.springframework.org/schema/beans
             http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="userDao" class="com.wty.dao.impl.UserDaoImpl"></bean>
-
+    <bean id="userDao" class="com.wty.dao.impl.UserDaoImpl" scope="prototype"></bean>
+<!--bean标签基本配置-->
+<!--    1.只能定义无参构造函数-->
+<!--    id：Bean实例在Spring容器中的唯一标识符-->
+<!--    class：Bean的全限定名称-->
+<!--scope属性-->
+<!--    singleton 默认，单一对象; 创建：加载xml时创建对象; 运行：容器在对象一直存在; 销毁：应用卸载/容器销毁时对象销毁-->
+<!--    prototype 多例; getBean使用对象时创建; 创建：使用对象时创建; 运行：对象使用中一直在; 对象不适用时被GC回收-->
+<!--    request-->
+<!--    session-->
+<!--    global session-->
 </beans>
