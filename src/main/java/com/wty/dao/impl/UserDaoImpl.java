@@ -7,6 +7,18 @@ public class UserDaoImpl implements UserDao {
     public UserDaoImpl() {
         System.out.println("UserDaoImpl building...");
     }
+
+
+    public void init() {
+        System.out.println("Init...");
+    }
+
+
+    public void destroy() {
+        System.out.println("destroying...");
+    }
+
+
     public void save() {
         System.out.println("saving...");
     }
